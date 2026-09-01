@@ -1,88 +1,57 @@
 # AI-Powered Quantum Circuit Optimization Advisor
-## Interactive Streamlit Dashboard
 
-This dashboard is built for the revised project pipeline.
+An interactive quantum circuit analysis and optimization dashboard built using **Qiskit, Machine Learning, and Streamlit**.
 
-It accepts a quantum circuit and shows:
+The system accepts a quantum circuit, analyzes its structure, compares Qiskit optimization levels `0–3`, predicts `Success_Probability` using a trained Random Forest model, estimates noise exposure, and recommends a suitable optimization level.
 
-- raw circuit depth
-- total gates and multi-qubit gates
-- optimization levels 0, 1, 2 and 3
-- optimized depth and gate count
-- estimated noise exposure
-- the depth layers where noise-sensitive operations occur
-- gate-level noise hotspots
-- predicted Success Probability using the trained Random Forest model
-- recommended optimization level
-- an optimized circuit view
-- dataset analytics
+## Live Demo
 
-## Important scientific wording
-
-The dashboard displays a **noise exposure map**.
-
-It does NOT claim that a random physical error definitely occurred at a specific gate.
-The map shows which operations and depth layers are exposed to the project's modeled
-noise channels:
-
-- one-qubit gate error
-- two-qubit gate error
-- T1/T2 exposure
-- readout error
-
-That is the correct interpretation for this simulator-based project.
+👉 [Open the Quantum Circuit Optimization Advisor](https://quantum-circuit-optimization-advisor-lqppos4z5vycedajsyflwh.streamlit.app/)
 
 ---
 
-## Required project files
+## Project Workflow
 
-The dashboard itself is complete, but for live ML prediction you need the model
-already saved by your notebook:
-
-`random_forest_success_probability.joblib`
-
-For the Dataset page, optionally place:
-
-`quantum_circuit_dataset_clean.xlsx`
-
-in the same folder as `app.py`.
-
-You may also upload either file from the dashboard sidebar.
+```text
+Quantum Circuit
+      ↓
+Feature Extraction
+      ↓
+Backend + Noise Conditions
+      ↓
+Optimization Levels 0–3
+      ↓
+Random Forest Prediction
+      ↓
+Optimization Recommendation
+      ↓
+Interactive Dashboard
+```
 
 ---
 
-## Run in Windows / VS Code
+## Features
 
-Open a terminal in this folder.
-
-### 1. Activate your Qiskit environment
-
-```bash
-conda activate myQisk
-```
-
-### 2. Install dashboard packages
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Start dashboard
-
-```bash
-streamlit run app.py
-```
-
-The browser should open automatically.
-
-You can also double-click `run_dashboard.bat`.
+- Built-in quantum circuits
+- Manual gate builder
+- OpenQASM 2 input
+- Circuit depth and gate analysis
+- Single- and multi-qubit gate counts
+- Backend and noise-profile selection
+- Qiskit optimization levels `0–3`
+- Optimized depth and gate count
+- Depth and gate reduction
+- Noise-exposure analysis
+- Noise-sensitive depth layers
+- Random Forest Success Probability prediction
+- Automatic optimization recommendation
+- Optimized circuit visualization
+- Dataset analytics
+- Model-performance dashboard
 
 ---
 
-## Circuit input options
-
-### Built-in Algorithm
-Choose one of:
+## Supported Built-in Circuits
 
 - Bell
 - GHZ
@@ -94,48 +63,117 @@ Choose one of:
 - QAOA
 - Simon
 
-### Manual Gate Builder
-Create your own circuit using:
-
-- H
-- X
-- Y
-- Z
-- RX
-- RY
-- RZ
-- CX
-- CZ
-- SWAP
-- CCX
-- MEASURE_ALL
-
-### OpenQASM 2
-Paste or upload a `.qasm` circuit.
+Custom circuits can also be created using the **Manual Gate Builder** or supplied through **OpenQASM 2**.
 
 ---
 
-## What happens after you click Analyze
+## Machine Learning Model
 
-1. The circuit is converted into the canonical feature basis.
-2. Raw circuit depth and structural features are extracted.
-3. The selected backend and noise profile are applied.
-4. The circuit is transpiled at optimization levels 0–3.
-5. The dashboard compares depth, gates and noise exposure.
-6. If the trained model is loaded, Success Probability is predicted for all four levels.
-7. The best level is recommended.
-8. The selected optimized circuit is shown.
-9. Noise-sensitive depth layers and gate hotspots are displayed.
+The current model is a **Random Forest Regressor** trained to predict:
+
+```text
+Success_Probability
+```
+
+Current evaluation results:
+
+| Metric | Value |
+|---|---:|
+| MAE | 0.045087 |
+| MSE | 0.011213 |
+| RMSE | 0.105893 |
+| R² | 0.901976 |
+
+The trained model is stored as:
+
+```text
+random_forest_success_probability.joblib
+```
 
 ---
 
-## Current model results
+## Benchmark Dataset
 
-These values are pre-filled from the latest result reported during development:
+The project uses an automatically generated benchmark dataset containing:
 
-- MAE: 0.045087
-- MSE: 0.011213
-- RMSE: 0.105893
-- R²: 0.901976
+```text
+1500 quantum circuit execution samples
+```
 
-If you retrain the model, edit `LATEST_METRICS` near the top of `app.py`.
+The dataset includes variations in:
+
+- Algorithm
+- Number of qubits
+- Backend profile
+- Optimization level
+- Noise level
+- Shots
+
+Dataset file:
+
+```text
+quantum_circuit_dataset_clean.xlsx
+```
+
+---
+
+## Noise Exposure
+
+The dashboard displays a **noise exposure map**.
+
+It does not claim that a physical error definitely occurred at a specific gate. Instead, it identifies operations and circuit depth layers that are more exposed to modeled noise effects such as:
+
+- One-qubit gate error
+- Two-qubit gate error
+- T1/T2 exposure
+- Readout error
+
+---
+
+## Repository Structure
+
+```text
+Quantum-Circuit-Optimization-Advisor/
+├── app.py
+├── Quantum_Circuit_Optimization_Advisor.ipynb
+├── quantum_circuit_dataset_clean.xlsx
+├── random_forest_success_probability.joblib
+├── metrics.json
+├── requirements.txt
+└── README.md
+```
+
+
+## Technologies Used
+
+- Python
+- Qiskit
+- Qiskit Aer
+- Scikit-learn
+- Random Forest Regression
+- Pandas
+- NumPy
+- SciPy
+- Joblib
+- Streamlit
+- OpenQASM
+- Git
+- GitHub
+
+
+
+
+
+##Scope
+
+The model was trained primarily on the benchmark circuit families included in the dataset.
+
+Custom circuits can still be analyzed and transpiled by Qiskit, but predictions for circuits very different from the training data should be interpreted as model estimates rather than guaranteed hardware performance.
+
+---
+
+## Links
+
+**Live Dashboard:**  
+https://quantum-circuit-optimization-advisor-lqppos4z5vycedajsyflwh.streamlit.app/
+
