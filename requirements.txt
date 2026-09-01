@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-streamlit>=1.37
-=======
 streamlit==1.62.0
-
->>>>>>> bc0bc70 (Pin dependencies for Streamlit deployment)
 qiskit==2.5.0
 qiskit-aer==0.17.2
-
 numpy==2.5.0
 pandas==3.0.3
 scikit-learn==1.9.0
 scipy==1.18.0
 joblib==1.5.3
-
 openpyxl==3.1.5
 pyarrow==24.0.0
