@@ -4,7 +4,7 @@ An interactive quantum circuit analysis and optimization dashboard built using *
 
 The system accepts a quantum circuit, analyzes its structure, compares Qiskit optimization levels `0–3`, predicts `Success_Probability` using a trained Random Forest model, estimates noise exposure, and recommends a suitable optimization level.
 
-## Live Demo
+## Live Dashboard
 
 👉 [Open the Quantum Circuit Optimization Advisor](https://quantum-circuit-optimization-advisor-lqppos4z5vycedajsyflwh.streamlit.app/)
 
