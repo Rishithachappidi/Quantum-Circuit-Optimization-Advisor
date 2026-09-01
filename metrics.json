@@ -1,0 +1,8 @@
+{
+  "target": "Success_Probability",
+  "problem_type": "Regression",
+  "MAE": 0.045087,
+  "MSE": 0.011213,
+  "RMSE": 0.105893,
+  "R2": 0.901976
+}
