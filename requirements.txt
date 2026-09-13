@@ -1,5 +1,5 @@
 streamlit==1.62.0
-qiskit==2.5.0
+qiskit==2.5.2
 qiskit-aer==0.17.2
 numpy==2.5.0
 pandas==3.0.3
