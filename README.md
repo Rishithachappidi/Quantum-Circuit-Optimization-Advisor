@@ -6,7 +6,7 @@ The system accepts a quantum circuit, analyzes its structure, compares Qiskit op
 
 ## Live Dashboard
 
-👉 [Open the Quantum Circuit Optimization Advisor](https://quantum-circuit-optimization-advisor-lqppos4z5vycedajsyflwh.streamlit.app/)
+👉 [Open the Quantum Circuit Optimization Advisor](https://quantum-circuit-optimization-advisor.onrender.com/)
 
 ---
 
@@ -172,8 +172,5 @@ Custom circuits can still be analyzed and transpiled by Qiskit, but predictions 
 
 ---
 
-## Links
 
-**Live Dashboard:**  
-https://quantum-circuit-optimization-advisor-lqppos4z5vycedajsyflwh.streamlit.app/
 
