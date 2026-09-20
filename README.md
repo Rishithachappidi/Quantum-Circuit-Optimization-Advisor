@@ -164,13 +164,7 @@ Quantum-Circuit-Optimization-Advisor/
 
 
 
-##Scope
 
-The model was trained primarily on the benchmark circuit families included in the dataset.
-
-Custom circuits can still be analyzed and transpiled by Qiskit, but predictions for circuits very different from the training data should be interpreted as model estimates rather than guaranteed hardware performance.
-
----
 
 
 
