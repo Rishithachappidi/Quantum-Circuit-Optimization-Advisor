@@ -6,7 +6,7 @@ The system accepts a quantum circuit, analyzes its structure, compares Qiskit op
 
 ## Live Dashboard
 
-👉 [Open the Quantum Circuit Optimization Advisor](https://quantum-circuit-optimization-advisor.onrender.com/)
+[Open the Quantum Circuit Optimization Advisor](https://quantum-circuit-optimization-advisor.onrender.com/)
 
 ---
 
