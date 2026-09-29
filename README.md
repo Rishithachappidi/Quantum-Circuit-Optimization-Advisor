@@ -1,8 +1,8 @@
 # AI-Powered Quantum Circuit Optimization Advisor
 
-An interactive quantum circuit analysis and optimization dashboard built using **Qiskit, Machine Learning, and Streamlit**.
+An interactive quantum circuit analysis and optimization dashboard built using **Qiskit, Machine Learning, and Streamlit** .
 
-The system accepts a quantum circuit, analyzes its structure, compares Qiskit optimization levels `0–3`, predicts `Success_Probability` using a trained Random Forest model, estimates noise exposure, and recommends a suitable optimization level.
+The system accepts a quantum circuit, analyzes its structure, compares Qiskit optimization levels `0–3`, predicts `Success_Probability` using a trained Random Forest model, estimates noise exposure and recommends a suitable optimization level.
 
 ## Live Dashboard
 
