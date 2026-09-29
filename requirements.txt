@@ -1,6 +1,11 @@
 streamlit==1.62.0
+<<<<<<< HEAD
 qiskit==2.5.2
 qiskit-aer==0.17.2
+=======
+qiskit==2.5.0
+
+>>>>>>> b7e3241 (Remove unused qiskit-aer dependency)
 numpy==2.5.0
 pandas==3.0.3
 scikit-learn==1.9.0
