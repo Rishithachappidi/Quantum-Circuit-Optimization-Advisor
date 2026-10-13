@@ -91,6 +91,17 @@ random_forest_success_probability.joblib
 ```
 
 ---
+## Dashboard Versions
+
+| Version | Analysis |
+|---|---|
+| Streamlit | Live Qiskit transpilation and inference using the saved Random Forest |
+| Browser | Previously generated Qiskit comparisons and model predictions, with interactive noise-exposure analysis |
+
+The browser dashboard runs without a Python server. Custom manual and QASM circuits receive structural analysis only.
+
+Noise exposure represents modeled risk; it does not identify errors that actually occurred during execution.
+
 
 ## Benchmark Dataset
 
@@ -109,13 +120,6 @@ The dataset includes variations in:
 - Noise level
 - Shots
 
-Dataset file:
-
-```text
-quantum_circuit_dataset_clean.xlsx
-```
-
----
 
 ## Noise Exposure
 
