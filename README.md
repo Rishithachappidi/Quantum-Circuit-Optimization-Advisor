@@ -6,7 +6,7 @@ The system accepts a quantum circuit, analyzes its structure, compares Qiskit op
 
 
 ## Live Dashboards
-
+ 
 - [Streamlit Dashboard — Render](https://quantum-circuit-optimization-advisor.onrender.com/)
 - [Browser Dashboard — GitHub Pages](https://rishithachappidi.github.io/Quantum-Circuit-Optimization-Advisor/)
 
