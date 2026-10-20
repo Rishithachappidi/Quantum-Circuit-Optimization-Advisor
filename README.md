@@ -1,4 +1,4 @@
-# AI-Powered Quantum Circuit Optimization Advisor
+## AI-Powered Quantum Circuit Optimization Advisor
 
 An interactive quantum circuit analysis and optimization dashboard built using **Qiskit, Machine Learning, and Streamlit** .
 
@@ -13,7 +13,7 @@ The system accepts a quantum circuit, analyzes its structure, compares Qiskit op
 ---
 
 
-## Project Workflow
+### Project Workflow
 
 ```text
 Quantum Circuit
@@ -33,7 +33,7 @@ Interactive Dashboard
 
 ---
 
-## Features
+### Features
 
 - Built-in quantum circuits
 - Manual gate builder
@@ -54,7 +54,7 @@ Interactive Dashboard
 
 ---
 
-## Supported Built-in Circuits
+### Supported Built-in Circuits
 
 - Bell
 - GHZ
@@ -94,7 +94,7 @@ random_forest_success_probability.joblib
 ```
 
 ---
-## Dashboard Versions
+### Dashboard Versions
 
 | Version | Analysis |
 |---|---|
@@ -124,7 +124,7 @@ The dataset includes variations in:
 - Shots
 
 
-## Noise Exposure
+### Noise Exposure
 
 The dashboard displays a **noise exposure map**.
 
@@ -137,7 +137,7 @@ It does not claim that a physical error definitely occurred at a specific gate. 
 
 ---
 
-## Repository Structure
+### Repository Structure
 
 ```text
 Quantum-Circuit-Optimization-Advisor/
@@ -151,7 +151,7 @@ Quantum-Circuit-Optimization-Advisor/
 ```
 
 
-## Technologies Used
+### Technologies Used
 
 - Python
 - Qiskit
